@@ -19,14 +19,24 @@
             padding: 0 20px;
         }
         .preview {
-            word-break: break-all;
-            font-size: 2rem;
+            word-break: break-word;
+            font-size: 1.8rem;
         }
         .preview.regular {
             font-family: "INAFFont Meconopsis Regular";
         }
         .preview.bold {
             font-family: "INAFFont Meconopsis Bold";
+        }
+        .demo {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 200px;
+            font-family: "INAFFont Meconopsis Regular";
+            font-size: 1.8rem;
+            padding: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -87,6 +97,13 @@
                 abcdefghijklmnopqrstuvwxyz<br>
                 0123456789.,'<br>
             </p>
+        </div>
+        <div>
+            <h2>Demo</h2>
+            <textarea class="demo">No, I won't keep praying endlessly
+A world without love
+Is not the world that I want to see
+Tell me, how do I reconcile the joy in my memory</textarea>
         </div>
     </div>
 </body>
