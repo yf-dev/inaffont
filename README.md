@@ -1,20 +1,26 @@
 # INAFFont
 
-[한국어](./README.md) | [English](./README.en.md)
+[English](./README.md) | [한국어](./README.ko.md)
 
-비공식 Ninomae Ina’nis 폰트
+Unofficial Font for Ninomae Ina’nis
 
 [Font Preview](https://yf-dev.github.io/inaffont/) | [Download](./dist)
 
-## 개요
+## Overview
 
-INAFFont는 [Ninomae Ina’nis](https://hololive.hololivepro.com/en/talents/ninomae-inanis/)의 아트워크에 사용하는 특징적인 글리프 담은 폰트입니다.
+INAFFont is a font that contains the distinctive glyphs used in [Ninomae Ina’nis](https://hololive.hololivepro.com/en/talents/ninomae-inanis/)'s artwork.
 
-아트워크에 표현되지 않아 글리프를 알 수 없는 일부 글자는 다른 글리프와 비슷하게 보이도록 추정하여 만들었으므로, 실제 글리프와 다를 수 있습니다.
+Some characters that are not represented in the artwork are estimated to look similar to other glyphs, so the actual glyphs may differ.
 
-## 사용 가능한 폰트
+## Available Fonts
 
-- INAFFont Meconopsis: [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y)에 사용된 글리프를 바탕으로 만든 폰트입니다.
+- INAFFont Meconopsis: A font created based on the glyphs used in [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y).
+
+## Disclaimer
+
+This project is not an official project of Hololive Production or Ninomae Ina’nis.
+
+All rights to each glyph and artwork are assets of the respective owner and licensee.
 
 ## License
 
