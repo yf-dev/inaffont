@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INAFFont - Unofficial Font for Ninomae Ina’nis</title>
+    <style>
+        @font-face {
+            font-family: "INAFFont Meconopsis Regular";
+            src: url("./dist/inaffont-meconopsis-regular.otf") format("opentype");
+        }
+        @font-face {
+            font-family: "INAFFont Meconopsis Bold";
+            src: url("./dist/inaffont-meconopsis-bold.otf") format("opentype");
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .preview {
+            word-break: break-all;
+            font-size: 2rem;
+        }
+        .preview.regular {
+            font-family: "INAFFont Meconopsis Regular";
+        }
+        .preview.bold {
+            font-family: "INAFFont Meconopsis Bold";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>INAFFont</h1>
+            <p>Unofficial Font for Ninomae Ina’nis</p>
+            <a href="https://github.com/yf-dev/inaffont/tree/main/dist" target="_blank">Download</a>
+            <a href="https://github.com/yf-dev/inaffont" target="_blank">Github</a>
+        </div>
+        <div>
+            <h2>Overview</h2>
+            <p>
+                INAFFont is a font that contains the distinctive glyphs used in
+                <a href="https://hololive.hololivepro.com/en/talents/ninomae-inanis/" target="_blank">Ninomae Ina’nis</a>'s artwork. 
+                <br>
+                Some characters that are not represented in the artwork are estimated to look similar to other glyphs, so the actual glyphs may differ.
+            </p>
+        </div>
+        <div>
+            <h2>Available Fonts</h2>
+            <ul>
+                <li>INAFFont Meconopsis: A font created based on the glyphs used in <a href="https://www.youtube.com/watch?v=XzkNg89Cq9Y" target="_blank">MECONOPSIS MV</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>License</h2>
+            <p>
+                SIL OPEN FONT LICENSE Version 1.1
+            </p>
+        </div>
+        <div>
+            <h2>Preview</h2>
+            <h3>INAFFont Meconopsis Regular</h3>
+            <p class="preview regular">
+                INAFFont Meconopsis Regular<br>
+                The Quick Brown Fox Jumps Over The Lazy Dog<br>
+                <br>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789.,'<br>
+            </p>
+            <h3>INAFFont Meconopsis Bold</h3>
+            <p class="preview bold">
+                INAFFont Meconopsis Bold<br>
+                The Quick Brown Fox Jumps Over The Lazy Dog<br>
+                <br>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789.,'<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
