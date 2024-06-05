@@ -22,13 +22,14 @@ INAFFont는 [Ninomae Ina’nis](https://hololive.hololivepro.com/en/talents/nino
 docker compose run --rm fontforge
 ```
 
-## 면책 조항
-
-이 프로젝트는 Hololive Production 또는 Ninomae Ina’nis
-의 공식 프로젝트가 아닙니다.
-
-각 글리프 및 아트워크에 대한 모든 권리는 해당 소유자 및 사용 허가자의 자산입니다.
-
 ## License
 
 SIL OPEN FONT LICENSE Version 1.1
+
+## 면책 조항
+
+이 프로젝트는 Hololive Production 또는 Ninomae Ina’nis의 공식 프로젝트가 아닙니다.
+
+각 글리프 및 아트워크에 대한 모든 권리는 해당 소유자 및 사용 허가자의 자산입니다.
+
+폰트 소프트웨어의 라이선스와는 별개로, 글리프 및 아트워크에 대한 사용 허가는 Hololive Production의 [Derivative Works Guidelines](https://hololivepro.com/en/terms/)에 따라야 합니다.

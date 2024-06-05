@@ -22,12 +22,14 @@ Some characters that are not represented in the artwork are estimated to look si
 docker compose run --rm fontforge
 ```
 
+## License
+
+SIL OPEN FONT LICENSE Version 1.1
+
 ## Disclaimer
 
 This project is not an official project of Hololive Production or Ninomae Ina’nis.
 
 All rights to each glyph and artwork are assets of the respective owner and licensee.
 
-## License
-
-SIL OPEN FONT LICENSE Version 1.1
+Font software license is separate from the use of glyphs and artwork, and the use of glyphs and artwork must comply with Hololive Production's [Derivative Works Guidelines](https://hololivepro.com/en/terms/).
