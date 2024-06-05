@@ -1,0 +1,8 @@
+services:
+  fontforge:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./dist:/app/dist
+      - ./build.sh:/app/build.sh
+    command: ./build.sh

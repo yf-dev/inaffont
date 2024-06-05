@@ -16,6 +16,12 @@ INAFFont는 [Ninomae Ina’nis](https://hololive.hololivepro.com/en/talents/nino
 
 - INAFFont Meconopsis: [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y)에 사용된 글리프를 바탕으로 만든 폰트입니다.
 
+## Build
+
+```bash
+docker compose run --rm fontforge
+```
+
 ## 면책 조항
 
 이 프로젝트는 Hololive Production 또는 Ninomae Ina’nis

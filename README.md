@@ -16,6 +16,12 @@ Some characters that are not represented in the artwork are estimated to look si
 
 - INAFFont Meconopsis: A font created based on the glyphs used in [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y).
 
+## Build
+
+```bash
+docker compose run --rm fontforge
+```
+
 ## Disclaimer
 
 This project is not an official project of Hololive Production or Ninomae Ina’nis.
