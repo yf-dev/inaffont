@@ -4,12 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>INAFFont - Unofficial Font for Ninomae Ina’nis</title>
+    <meta name="description" content="Unofficial Font for Ninomae Ina’nis">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://yf-dev.github.io/inaffont/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="INAFFont">
+    <meta property="og:description" content="Unofficial Font for Ninomae Ina’nis">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="yf-dev.github.io">
+    <meta property="twitter:url" content="https://yf-dev.github.io/inaffont/">
+    <meta name="twitter:title" content="INAFFont">
+    <meta name="twitter:description" content="Unofficial Font for Ninomae Ina’nis">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <style>
+        @font-face {
+            font-family: "INAFFont Meconopsis Regular";
+            src: url("./dist/inaffont-meconopsis-regular.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "INAFFont Meconopsis Bold";
+            src: url("./dist/inaffont-meconopsis-bold.otf") format("opentype");
+        }
+
+        :root {
+            --nai-white: #ffffff;
+            --ink-black: #000000;
+            --ika-purple: #575068;
+            --ina-orange: #f29a30;
+            --inai-purple: #e1d8ef;
+        }
+
         /* Box sizing rules */
         *,
         *::before,
@@ -104,24 +138,6 @@
         /* Anything that has been anchored to should have extra scroll margin */
         :target {
             scroll-margin-block: 5ex;
-        }
-
-        @font-face {
-            font-family: "INAFFont Meconopsis Regular";
-            src: url("./dist/inaffont-meconopsis-regular.otf") format("opentype");
-        }
-
-        @font-face {
-            font-family: "INAFFont Meconopsis Bold";
-            src: url("./dist/inaffont-meconopsis-bold.otf") format("opentype");
-        }
-
-        :root {
-            --nai-white: #ffffff;
-            --ink-black: #000000;
-            --ika-purple: #575068;
-            --ina-orange: #f29a30;
-            --inai-purple: #e1d8ef;
         }
 
         a {
