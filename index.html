@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INAFFont - Unofficial Font for Ninomae Ina’nis</title>
-    <meta name="description" content="Unofficial Font for Ninomae Ina’nis">
+    <title>INAFFont - Unofficial Font for Ninomae Ina'nis</title>
+    <meta name="description" content="Unofficial Font for Ninomae Ina'nis">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://yf-dev.github.io/inaffont/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="INAFFont">
-    <meta property="og:description" content="Unofficial Font for Ninomae Ina’nis">
+    <meta property="og:description" content="Unofficial Font for Ninomae Ina'nis">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="yf-dev.github.io">
     <meta property="twitter:url" content="https://yf-dev.github.io/inaffont/">
     <meta name="twitter:title" content="INAFFont">
-    <meta name="twitter:description" content="Unofficial Font for Ninomae Ina’nis">
+    <meta name="twitter:description" content="Unofficial Font for Ninomae Ina'nis">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <style>
+        @font-face {
+            font-family: "INAFFont Meconopsis Thin";
+            src: url("./dist/inaffont-meconopsis-thin.otf") format("opentype");
+        }
+
         @font-face {
             font-family: "INAFFont Meconopsis Regular";
             src: url("./dist/inaffont-meconopsis-regular.otf") format("opentype");
@@ -196,11 +201,15 @@
 
         .font-list ul {
             list-style: none;
-            padding-left: 1rem;
+            padding-inline-start: 0;
         }
 
         .font-list .font-name {
-            font-weight: 500;
+            font-weight: 600;
+        }
+
+        .preview.thin {
+            font-family: "INAFFont Meconopsis Thin";
         }
 
         .preview.regular {
@@ -255,7 +264,7 @@
         <div class="container">
             <div class="title">
                 <h1>INAFFont</h1>
-                <div class="subtitle">Unofficial Font for Ninomae Ina’nis</div>
+                <div class="subtitle">Unofficial Font for Ninomae Ina'nis</div>
                 <a class="button" href="https://github.com/yf-dev/inaffont/tree/main/dist" target="_blank">Download</a>
                 &nbsp;
                 <a class="button" href="https://github.com/yf-dev/inaffont" target="_blank">Github</a>
@@ -266,13 +275,13 @@
         <div>
             <h2>Overview</h2>
             <p>
-                INAFFont is a font that contains the distinctive glyphs used in
+                INAFFont is a font that includes the distinctive glyphs used in
                 <a href="https://hololive.hololivepro.com/en/talents/ninomae-inanis/" target="_blank">Ninomae
-                    Ina’nis</a>'s artwork.
+                    Ina'nis</a>'s artwork.
             </p>
             <p>
-                Some characters that are not represented in the artwork are estimated to look similar to other glyphs,
-                so the actual glyphs may differ.
+                Some characters that are not represented in the artwork are approximated to look similar to other glyphs,
+                so the actual glyphs may vary.
             </p>
         </div>
         <div class="font-list">
@@ -284,25 +293,35 @@
         </div>
         <div>
             <h2>Preview</h2>
+            <h3>INAFFont Meconopsis Thin</h3>
+            <p class="preview thin">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                abcdefghijklmnopqrstuvwxyz
+                1234567890(){}[]&lt;&gt;
+                _,.!?~@#$%&amp;;:/|\-=*+^`'&quot;
+            </p>
             <h3>INAFFont Meconopsis Regular</h3>
             <p class="preview regular">
-                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-                abcdefghijklmnopqrstuvwxyz<br>
-                0123456789.,'<br>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                abcdefghijklmnopqrstuvwxyz
+                1234567890(){}[]&lt;&gt;
+                _,.!?~@#$%&amp;;:/|\-=*+^`'&quot;
             </p>
             <h3>INAFFont Meconopsis Bold</h3>
             <p class="preview bold">
-                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-                abcdefghijklmnopqrstuvwxyz<br>
-                0123456789.,'<br>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                abcdefghijklmnopqrstuvwxyz
+                1234567890(){}[]&lt;&gt;
+                _,.!?~@#$%&amp;;:/|\-=*+^`'&quot;
             </p>
         </div>
         <div class="demo">
             <h2>Try it</h2>
             <fieldset>
                 <label for="font">Font</label>
-                <select name="font" id="font" value="INAFFont Meconopsis Regular">
-                    <option value="INAFFont Meconopsis Regular">INAFFont Meconopsis Regular</option>
+                <select name="font" id="font">
+                    <option value="INAFFont Meconopsis Thin">INAFFont Meconopsis Thin</option>
+                    <option value="INAFFont Meconopsis Regular" selected>INAFFont Meconopsis Regular</option>
                     <option value="INAFFont Meconopsis Bold">INAFFont Meconopsis Bold</option>
                 </select>
                 <br>
@@ -327,19 +346,19 @@
         <div>
             <h2>License</h2>
             <p>
-                SIL OPEN FONT LICENSE Version 1.1
+                <a href="https://github.com/yf-dev/inaffont/blob/main/OFL.md" target="_blank">SIL OPEN FONT LICENSE Version 1.1</a>
             </p>
         </div>
         <div>
             <h2>Disclaimer</h2>
             <p>
-                This project is not an official project of Hololive Production or Ninomae Ina’nis.
+                This project is not an official project of Hololive Production or Ninomae Ina'nis.
             </p>
             <p>
                 All rights to each glyph and artwork are assets of the respective owner and licensee.
             </p>
             <p>
-                Font software license is separate from the use of glyphs and artwork, and the use of glyphs and artwork must comply with Hololive Production's <a href="https://hololivepro.com/en/terms/" target="_blank">Derivative Works Guidelines</a>.
+                The font software license is separate from the use of glyphs and artwork, and the use of glyphs and artwork must comply with Hololive Production's <a href="https://hololivepro.com/en/terms/" target="_blank">Derivative Works Guidelines</a>.
             </p>
         </div>
     </div>
