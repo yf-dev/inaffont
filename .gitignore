@@ -2,3 +2,8 @@ __pycache__/
 *.py[cod]
 
 .vscode/
+
+# development
+.devcontainer.json
+docker-compose.dev.yml
+Dockerfile.dev
