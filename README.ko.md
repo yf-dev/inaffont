@@ -4,7 +4,7 @@
 
 비공식 Ninomae Ina'nis 폰트
 
-[Font Preview](https://yf-dev.github.io/inaffont/) | [Download](./dist)
+[Font Preview](https://yf-dev.github.io/inaffont/index.ko.html) | [Download](./dist)
 
 ## 개요
 

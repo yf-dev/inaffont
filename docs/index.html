@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INAFFont - Unofficial Font for Ninomae Ina'nis</title>
+    <meta name="description" content="Unofficial Font for Ninomae Ina'nis">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://yf-dev.github.io/inaffont/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="INAFFont">
+    <meta property="og:description" content="Unofficial Font for Ninomae Ina'nis">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="yf-dev.github.io">
+    <meta property="twitter:url" content="https://yf-dev.github.io/inaffont/">
+    <meta name="twitter:title" content="INAFFont">
+    <meta name="twitter:description" content="Unofficial Font for Ninomae Ina'nis">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="title">
+                <h1>INAFFont</h1>
+                <div class="subtitle">Unofficial Font for Ninomae Ina'nis</div>
+                <a class="button" href="https://github.com/yf-dev/inaffont/tree/main/dist" target="_blank">Download</a>
+                &nbsp;
+                <a class="button" href="https://github.com/yf-dev/inaffont" target="_blank">Github</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <a href="./index.html">English</a> / <a href="./index.ko.html">한국어</a>
+            <h2>Overview</h2>
+            <p>
+                INAFFont is a font that includes the distinctive glyphs used in
+                <a href="https://hololive.hololivepro.com/en/talents/ninomae-inanis/" target="_blank">Ninomae
+                    Ina'nis</a>'s artwork.
+            </p>
+            <p>
+                Some characters that are not represented in the artwork are approximated to look similar to other
+                glyphs,
+                so the actual glyphs may vary.
+            </p>
+        </div>
+        <div class="font-list">
+            <h2>Available Fonts</h2>
+            <ul>
+                <li><span class="font-name">INAFFont Meconopsis</span>: A font created based on the glyphs used in <a
+                        href="https://www.youtube.com/watch?v=XzkNg89Cq9Y" target="_blank">MECONOPSIS MV</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Preview</h2>
+            <h3>INAFFont Meconopsis Thin</h3>
+            <p class="preview thin">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                1234567890(){}[]&lt;&gt;<br>
+                _,.!?~@#$%&amp;;:/|\-=*+^`'&quot;
+            </p>
+            <h3>INAFFont Meconopsis Regular</h3>
+            <p class="preview regular">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                1234567890(){}[]&lt;&gt;<br>
+                _,.!?~@#$%&amp;;:/|\-=*+^`'&quot;
+            </p>
+            <h3>INAFFont Meconopsis Bold</h3>
+            <p class="preview bold">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                1234567890(){}[]&lt;&gt;<br>
+                _,.!?~@#$%&amp;;:/|\-=*+^`'&quot;
+            </p>
+        </div>
+        <div class="demo">
+            <h2>Try it</h2>
+            <fieldset>
+                <label for="font">Font</label>
+                <select name="font" id="font">
+                    <option value="INAFFont Meconopsis Thin">INAFFont Meconopsis Thin</option>
+                    <option value="INAFFont Meconopsis Regular" selected>INAFFont Meconopsis Regular</option>
+                    <option value="INAFFont Meconopsis Bold">INAFFont Meconopsis Bold</option>
+                </select>
+                <br>
+                <label for="size">Size</label>
+                <input type="range" name="size" id="size" min="1" max="3" value="2" step="0.1">
+            </fieldset>
+            <textarea spellcheck="false">No, I won't keep praying endlessly</textarea>
+            <script>
+                const font = document.getElementById('font');
+                const size = document.getElementById('size');
+                const textarea = document.querySelector('textarea');
+
+                font.addEventListener('change', () => {
+                    textarea.style.fontFamily = font.value;
+                });
+
+                size.addEventListener('input', () => {
+                    textarea.style.fontSize = `${size.value}rem`;
+                });
+            </script>
+        </div>
+        <div>
+            <h2>License</h2>
+            <p>
+                <a href="https://github.com/yf-dev/inaffont/blob/main/OFL.md" target="_blank">SIL OPEN FONT LICENSE
+                    Version 1.1</a>
+            </p>
+        </div>
+        <div>
+            <h2>Disclaimer</h2>
+            <p>
+                This project is not an official project of Hololive Production or Ninomae Ina'nis.
+            </p>
+            <p>
+                All rights to each glyph and artwork are assets of the respective owner and licensee.
+            </p>
+            <p>
+                The font software license is separate from the use of glyphs and artwork, and the use of glyphs and
+                artwork must comply with Hololive Production's <a href="https://hololivepro.com/en/terms/"
+                    target="_blank">Derivative Works Guidelines</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

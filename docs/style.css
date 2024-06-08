@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+@font-face {
+    font-family: "INAFFont Meconopsis Thin";
+    src:
+        url("./dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("./dist/inaffont-meconopsis-thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis Regular";
+    src:
+        url("./dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("./dist/inaffont-meconopsis-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis Bold";
+    src:
+        url("./dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("./dist/inaffont-meconopsis-bold.otf") format("opentype");
+}
+
+:root {
+    --nai-white: #ffffff;
+    --ink-black: #000000;
+    --ika-purple: #575068;
+    --ina-orange: #f29a30;
+    --inai-purple: #e1d8ef;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: "Montserrat", "Pretendard Variable", sans-serif;
+    color: var(--ink-black);
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+a {
+    background-color: var(--ina-orange);
+    text-decoration: none;
+    padding: 0.1rem 0.1rem;
+}
+
+h1 {
+    font-family: "INAFFont Meconopsis Bold";
+    font-size: min(3rem, 10vw);
+}
+
+h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.header {
+    background-color: var(--ika-purple);
+    color: var(--nai-white);
+    padding: 10rem 0 4rem;
+}
+
+.header .subtitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 1rem 0 4rem;
+    text-wrap: balance;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.button {
+    font-weight: 700;
+    border-radius: 1rem;
+    line-height: 2.5rem;
+    padding: 0.4rem 1rem;
+    background-color: var(--ika-purple);
+    color: var(--nai-white);
+}
+
+.header .button {
+    background-color: var(--inai-purple);
+    color: var(--ika-purple);
+}
+
+.preview {
+    word-break: break-word;
+    font-size: 1.6rem;
+}
+
+.font-list ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.font-list .font-name {
+    font-weight: 600;
+}
+
+.preview.thin {
+    font-family: "INAFFont Meconopsis Thin";
+}
+
+.preview.regular {
+    font-family: "INAFFont Meconopsis Regular";
+}
+
+.preview.bold {
+    font-family: "INAFFont Meconopsis Bold";
+}
+
+.demo fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.demo fieldset label {
+    display: inline-block;
+    font-weight: 500;
+    width: 4rem;
+}
+
+.demo fieldset select,
+.demo fieldset input {
+    width: 20rem;
+    max-width: calc(100vw - 4rem);
+}
+
+.demo textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    font-family: "INAFFont Meconopsis Regular";
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: none;
+    resize: none;
+    border-radius: 0.4rem;
+    color: var(--nai-white);
+    background-color: var(--ika-purple);
+}
+
+.demo textarea:focus-visible {
+    outline: none;
+}
