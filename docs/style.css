@@ -4,22 +4,22 @@
 @font-face {
     font-family: "INAFFont Meconopsis Thin";
     src:
-        url("./dist/inaffont-meconopsis-thin.woff2") format("woff2"),
-        url("./dist/inaffont-meconopsis-thin.otf") format("opentype");
+        url("../dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("../dist/inaffont-meconopsis-thin.otf") format("opentype");
 }
 
 @font-face {
     font-family: "INAFFont Meconopsis Regular";
     src:
-        url("./dist/inaffont-meconopsis-regular.woff2") format("woff2"),
-        url("./dist/inaffont-meconopsis-regular.otf") format("opentype");
+        url("../dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("../dist/inaffont-meconopsis-regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "INAFFont Meconopsis Bold";
     src:
-        url("./dist/inaffont-meconopsis-bold.woff2") format("woff2"),
-        url("./dist/inaffont-meconopsis-bold.otf") format("opentype");
+        url("../dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("../dist/inaffont-meconopsis-bold.otf") format("opentype");
 }
 
 :root {
