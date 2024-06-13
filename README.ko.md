@@ -16,6 +16,43 @@ INAFFont는 [Ninomae Ina'nis](https://hololive.hololivepro.com/en/talents/ninoma
 
 - INAFFont Meconopsis: [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y)에 사용된 글리프를 바탕으로 만든 폰트입니다.
 
+## 사용 방법
+
+폰트 파일을 다운로드하거나 웹폰트를 사용하여 프로젝트에서 폰트를 사용할 수 있습니다.
+
+### 웹폰트
+
+다음의 CSS를 프로젝트에 포함하여 웹폰트를 사용할 수 있습니다.
+
+```css
+@font-face {
+    font-family: "INAFFont Meconopsis";
+	font-weight: 100;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+}
+```
+
 ## Build
 
 ```bash

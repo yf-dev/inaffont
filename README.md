@@ -16,6 +16,43 @@ Some characters that are not represented in the artwork are approximated to look
 
 - INAFFont Meconopsis: A font created based on the glyphs used in [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y).
 
+## Usage
+
+You can use the font in your projects by downloading the font files or using the webfont.
+
+### Webfont
+
+You can use the webfont by including the following CSS in your project.
+
+```css
+@font-face {
+    font-family: "INAFFont Meconopsis";
+	font-weight: 100;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+}
+```
+
 ## Build
 
 ```bash

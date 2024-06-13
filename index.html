@@ -89,9 +89,9 @@
             <fieldset>
                 <label for="font">Font</label>
                 <select name="font" id="font">
-                    <option value="INAFFont Meconopsis Thin">INAFFont Meconopsis Thin</option>
-                    <option value="INAFFont Meconopsis Regular" selected>INAFFont Meconopsis Regular</option>
-                    <option value="INAFFont Meconopsis Bold">INAFFont Meconopsis Bold</option>
+                    <option value="meconopsis-100">INAFFont Meconopsis Thin</option>
+                    <option value="meconopsis-400" selected>INAFFont Meconopsis Regular</option>
+                    <option value="meconopsis-700">INAFFont Meconopsis Bold</option>
                 </select>
                 <br>
                 <label for="size">Size</label>
@@ -104,13 +104,68 @@
                 const textarea = document.querySelector('textarea');
 
                 font.addEventListener('change', () => {
-                    textarea.style.fontFamily = font.value;
+                    const newValue = font.value.split('-');
+                    if (newValue[0] === 'meconopsis') {
+                        textarea.style.fontFamily = 'INAFFont Meconopsis';
+                    }
+                    textarea.style.fontWeight = newValue[1];
                 });
 
                 size.addEventListener('input', () => {
                     textarea.style.fontSize = `${size.value}rem`;
                 });
             </script>
+        </div>
+        <div>
+            <h2>Usage</h2>
+            <p>
+                You can use the font in your projects by downloading the font files or using the webfont.
+            </p>
+        </div>
+        <div>
+            <h3>Webfont</h3>
+            <p>
+                You can use the webfont by including the following CSS in your project.
+            </p>
+            <div id="webfont-code">
+                <pre>
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 100;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "INAFFont Meconopsis";
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+}
+                </pre>
+            </div>
+            <script type="module">
+                import { codeToHtml } from 'https://esm.sh/shiki@1.6.4'
+                const webfontCode = document.getElementById('webfont-code');
+                const code = webfontCode.querySelector('pre');
+                webfontCode.innerHTML = await codeToHtml(code.innerHTML.trim(), {
+                  lang: 'css',
+                  theme: 'rose-pine-moon'
+                });
+              </script>
         </div>
         <div>
             <h2>License</h2>

@@ -2,21 +2,27 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
 @font-face {
-    font-family: "INAFFont Meconopsis Thin";
+    font-family: "INAFFont Meconopsis";
+    font-weight: 100;
+    font-display: swap;
     src:
         url("../dist/inaffont-meconopsis-thin.woff2") format("woff2"),
         url("../dist/inaffont-meconopsis-thin.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "INAFFont Meconopsis Regular";
+    font-family: "INAFFont Meconopsis";
+    font-weight: 400;
+    font-display: swap;
     src:
         url("../dist/inaffont-meconopsis-regular.woff2") format("woff2"),
         url("../dist/inaffont-meconopsis-regular.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "INAFFont Meconopsis Bold";
+    font-family: "INAFFont Meconopsis";
+    font-weight: 700;
+    font-display: swap;
     src:
         url("../dist/inaffont-meconopsis-bold.woff2") format("woff2"),
         url("../dist/inaffont-meconopsis-bold.otf") format("opentype");
@@ -133,7 +139,8 @@ a {
 }
 
 h1 {
-    font-family: "INAFFont Meconopsis Bold";
+    font-family: "INAFFont Meconopsis";
+    font-weight: 700;
     font-size: min(3rem, 10vw);
 }
 
@@ -189,16 +196,20 @@ h2 {
     font-weight: 600;
 }
 
+.preview {
+    font-family: "INAFFont Meconopsis";
+}
+
 .preview.thin {
-    font-family: "INAFFont Meconopsis Thin";
+    font-weight: 100;
 }
 
 .preview.regular {
-    font-family: "INAFFont Meconopsis Regular";
+    font-weight: 400;
 }
 
 .preview.bold {
-    font-family: "INAFFont Meconopsis Bold";
+    font-weight: 700;
 }
 
 .demo fieldset {
@@ -224,7 +235,8 @@ h2 {
     min-width: 100%;
     max-width: 100%;
     min-height: 200px;
-    font-family: "INAFFont Meconopsis Regular";
+    font-family: "INAFFont Meconopsis";
+    font-weight: 400;
     font-size: 1.8rem;
     padding: 1rem;
     border: none;
@@ -236,4 +248,9 @@ h2 {
 
 .demo textarea:focus-visible {
     outline: none;
+}
+
+#webfont-code pre {
+    overflow-x: scroll;
+    padding: 0.8rem;
 }
