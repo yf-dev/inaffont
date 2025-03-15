@@ -57,7 +57,9 @@
             <h2>Available Fonts</h2>
             <ul>
                 <li><span class="font-name">INAFFont Meconopsis</span>: A font created based on the glyphs used in <a
-                        href="https://www.youtube.com/watch?v=XzkNg89Cq9Y" target="_blank">MECONOPSIS MV</a></li>
+                        href="https://www.youtube.com/watch?v=XzkNg89Cq9Y" target="_blank">『MECONOPSIS』 - Ninomae
+                        Ina'nis</a> and <a href="https://www.youtube.com/watch?v=qKwwBklpvPA" target="_blank">【FAN
+                        MOVIE】理芽 × ヰ世界情緒 - 不的 (Ina'nis ver.)</a></li>
             </ul>
         </div>
         <div>
@@ -95,7 +97,7 @@
                 </select>
                 <br>
                 <label for="size">Size</label>
-                <input type="range" name="size" id="size" min="1" max="3" value="2" step="0.1">
+                <input type="range" name="size" id="size" min="2" max="4" value="3" step="0.1">
             </fieldset>
             <textarea spellcheck="false">No, I won't keep praying endlessly</textarea>
             <script>
@@ -134,8 +136,8 @@
     font-weight: 100;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.otf") format("opentype");
 }
 
 @font-face {
@@ -143,8 +145,8 @@
     font-weight: 400;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.otf") format("opentype");
 }
 
 @font-face {
@@ -152,8 +154,8 @@
     font-weight: 700;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.otf") format("opentype");
 }
                 </pre>
             </div>
@@ -162,10 +164,10 @@
                 const webfontCode = document.getElementById('webfont-code');
                 const code = webfontCode.querySelector('pre');
                 webfontCode.innerHTML = await codeToHtml(code.innerHTML.trim(), {
-                  lang: 'css',
-                  theme: 'rose-pine-moon'
+                    lang: 'css',
+                    theme: 'rose-pine-moon'
                 });
-              </script>
+            </script>
         </div>
         <div>
             <h2>License</h2>

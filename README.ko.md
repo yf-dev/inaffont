@@ -14,7 +14,7 @@ INAFFont는 [Ninomae Ina'nis](https://hololive.hololivepro.com/en/talents/ninoma
 
 ## 사용 가능한 폰트
 
-- INAFFont Meconopsis: [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y)에 사용된 글리프를 바탕으로 만든 폰트입니다.
+- INAFFont Meconopsis: [『MECONOPSIS』 - Ninomae Ina'nis](https://www.youtube.com/watch?v=XzkNg89Cq9Y)와 [【FAN MOVIE】理芽 × ヰ世界情緒 - 不的 (Ina'nis ver.)](https://www.youtube.com/watch?v=qKwwBklpvPA)에 사용된 글리프를 바탕으로 만든 폰트입니다.
 
 ## 사용 방법
 
@@ -30,8 +30,8 @@ INAFFont는 [Ninomae Ina'nis](https://hololive.hololivepro.com/en/talents/ninoma
 	font-weight: 100;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.otf") format("opentype");
 }
 
 @font-face {
@@ -39,8 +39,8 @@ INAFFont는 [Ninomae Ina'nis](https://hololive.hololivepro.com/en/talents/ninoma
     font-weight: 400;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.otf") format("opentype");
 }
 
 @font-face {
@@ -48,8 +48,8 @@ INAFFont는 [Ninomae Ina'nis](https://hololive.hololivepro.com/en/talents/ninoma
     font-weight: 700;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.otf") format("opentype");
 }
 ```
 

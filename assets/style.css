@@ -184,7 +184,7 @@ h2 {
 
 .preview {
     word-break: break-word;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
 }
 
 .font-list ul {
@@ -237,7 +237,7 @@ h2 {
     min-height: 200px;
     font-family: "INAFFont Meconopsis";
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 3rem;
     padding: 1rem;
     border: none;
     resize: none;

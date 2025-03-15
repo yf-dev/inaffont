@@ -14,7 +14,7 @@ Some characters that are not represented in the artwork are approximated to look
 
 ## Available Fonts
 
-- INAFFont Meconopsis: A font created based on the glyphs used in [MECONOPSIS MV](https://www.youtube.com/watch?v=XzkNg89Cq9Y).
+- INAFFont Meconopsis: A font created based on the glyphs used in [『MECONOPSIS』 - Ninomae Ina'nis](https://www.youtube.com/watch?v=XzkNg89Cq9Y) and [【FAN MOVIE】理芽 × ヰ世界情緒 - 不的 (Ina'nis ver.)](https://www.youtube.com/watch?v=qKwwBklpvPA).
 
 ## Usage
 
@@ -30,8 +30,8 @@ You can use the webfont by including the following CSS in your project.
 	font-weight: 100;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.otf") format("opentype");
 }
 
 @font-face {
@@ -39,8 +39,8 @@ You can use the webfont by including the following CSS in your project.
     font-weight: 400;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.otf") format("opentype");
 }
 
 @font-face {
@@ -48,8 +48,8 @@ You can use the webfont by including the following CSS in your project.
     font-weight: 700;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.otf") format("opentype");
 }
 ```
 

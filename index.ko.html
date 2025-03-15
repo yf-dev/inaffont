@@ -55,7 +55,9 @@
             <h2>사용 가능한 폰트</h2>
             <ul>
                 <li><span class="font-name">INAFFont Meconopsis</span>: <a
-                        href="https://www.youtube.com/watch?v=XzkNg89Cq9Y" target="_blank">MECONOPSIS MV</a>에 사용된 글리프를
+                        href="https://www.youtube.com/watch?v=XzkNg89Cq9Y" target="_blank">『MECONOPSIS』 - Ninomae
+                        Ina'nis</a>와 <a href="https://www.youtube.com/watch?v=qKwwBklpvPA" target="_blank">【FAN MOVIE】理芽
+                        × ヰ世界情緒 - 不的 (Ina'nis ver.)</a>에 사용된 글리프를
                     바탕으로 만든 폰트입니다.</li>
             </ul>
         </div>
@@ -94,7 +96,7 @@
                 </select>
                 <br>
                 <label for="size">Size</label>
-                <input type="range" name="size" id="size" min="1" max="3" value="2" step="0.1">
+                <input type="range" name="size" id="size" min="2" max="4" value="3" step="0.1">
             </fieldset>
             <textarea spellcheck="false">No, I won't keep praying endlessly</textarea>
             <script>
@@ -133,8 +135,8 @@
     font-weight: 100;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-thin.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-thin.otf") format("opentype");
 }
 
 @font-face {
@@ -142,8 +144,8 @@
     font-weight: 400;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-regular.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-regular.otf") format("opentype");
 }
 
 @font-face {
@@ -151,8 +153,8 @@
     font-weight: 700;
     font-display: swap;
     src:
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.4/dist/inaffont-meconopsis-bold.otf") format("opentype");
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/yf-dev/inaffont@v0.5/dist/inaffont-meconopsis-bold.otf") format("opentype");
 }
                 </pre>
             </div>
@@ -161,10 +163,10 @@
                 const webfontCode = document.getElementById('webfont-code');
                 const code = webfontCode.querySelector('pre');
                 webfontCode.innerHTML = await codeToHtml(code.innerHTML.trim(), {
-                  lang: 'css',
-                  theme: 'rose-pine-moon'
+                    lang: 'css',
+                    theme: 'rose-pine-moon'
                 });
-              </script>
+            </script>
         </div>
         <div>
             <h2>License</h2>
@@ -182,8 +184,8 @@
                 각 글리프 및 아트워크에 대한 모든 권리는 해당 소유자 및 사용 허가자의 자산입니다.
             </p>
             <p>
-                폰트 소프트웨어의 라이선스와는 별개로, 글리프 및 아트워크에 대한 사용 허가는 Hololive Production의 <a href="https://hololivepro.com/en/terms/"
-                    target="_blank">Derivative Works Guidelines</a>에 따라야 합니다.
+                폰트 소프트웨어의 라이선스와는 별개로, 글리프 및 아트워크에 대한 사용 허가는 Hololive Production의 <a
+                    href="https://hololivepro.com/en/terms/" target="_blank">Derivative Works Guidelines</a>에 따라야 합니다.
             </p>
         </div>
     </div>
